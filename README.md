@@ -9,3 +9,31 @@ abs | all | any | ascii | bin | bool | breakpoint | bytearray | bytes | callable
 ## 2. Built-in Constants
 
 False | True | None | NotImplemented | Ellipsis | __debug__ | copyright | credits | license | quit | exit
+
+## 3. Built-in Types
+
+and | or | not
+
+### Numerics
+
+int | float | complex
+
+### Sequences
+
+list | tuple | range | str | bytes | bytearray | memoryview | set | frozenset
+
+### Mappings
+
+dict
+
+### Classes
+
+module | class | code | type
+
+### Instances
+
+function | method
+
+### Exceptions
+
+notimplemented
