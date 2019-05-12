@@ -417,26 +417,86 @@ p = print
 # p(set((1, 1, 2, 2, 3, 3)))
 # p({1, 1, 2, 2, 3, 3}) # Curly brackets indicate a set, not dict, if there are no key-value pairs.
 
-# setattr()
+# This is the counterpart of getattr().
+# class X:
+#     def __init__(self):
+#       pass
+# setattr(X, 'foo', 123)
+# p(X.foo)
 
-# slice()
+# Return a slice object representing the set of indices specified by range(start, stop, step).
+# p(slice(0, 10, 2))
+# a = [0,1,2,3,4,5,6,7,8,9,10]
+# b = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# p(a[0:10:2])
+# p(b[0:20:2])
 
-# sorted()
+# Return a new sorted list from the items in iterable.
+# key specifies a function of one arg that extracts a comparison key from each element in iterable.
+# Sorted() is stable, meaning it will not change the order of element that evaluate to equal.
+# p(sorted(['a', 'B']))
+# p(sorted(['a', 'B'], key=str.lower))
+# p(sorted(['a', 'B'], key=str.lower, reverse=True))
 
-# @staticmethod
+# Transform a method into a static method.
+# class C:
+#     @staticmethod
+#     def f(arg1, arg2):
+#         return arg1 + arg2
+# p(C.f(1,2))
 
-# str()
+# Return a str version of object
+# p(str(1) + str(1))
 
-# sum()
+# Sums start and the items of an iterable from left to right and returns the total.
+# To add floats with extended precision, use math.fsum().
+# p(sum([1,2,3,4,5]))
+# p(sum([1,2,3,4,5], 5))
+# p(sum(['a', 'b', 'c'], 'd')) # TypeError: sum() can't fuse strings
+# p([1, 2, 3, 4].join(',')) # AttributeError: 'list' object has no attribute 'join'
+# p(''.join([1, 2, 3, 4, 5])) # TypeError: sequence item 0: expected str instance, int found
+# p(''.join([str(x) for x in [1, 2, 3, 4, 5]]))
 
-# super()
+# super(): Return a proxy object that delegates method calls to a parent or sibling class of type.
+# This is useful for accessing inherited methods that have been overridden in a class. The search order is same as that used by getattr(), except that the type itself is skipped.
+# The __mro__ attribute of the type lists the mothod resolution search order used by both getattr() and super(). The attribute is dynamic and can change whenever the inheritance heirarchy is updated.
+# There are two typical use cases for super. In a class heirarchy with single inheritance, super can be used to refer to parent classes without naming them explicitly.
+# class Shape:
+#     def __init__(self, shapename, **kwargs):
+#         self.shapename = shapename
+#         super().__init__(**kwargs)
+# class ColoredShape(Shape):
+#     def __init__(self, color, **kwargs):
+#         self.color = color
+#         super().__init__(**kwargs)
 
-# tuple()
+# cs = ColoredShape(color='red', shapename='circle')
+# p(dir(cs))
 
-# type()
+# Rather than being a function, tuple is actually an immutable sequence type.
+# p(tuple([1,2,3,4,5]))
+# p(tuple(range(1, 11)))
 
-# vars()
+# Return the type of an object. The return value is a type object that is generally the same as that returned by object.__class__
+# With three args, return a new Class object.
+# p(type(str))
+# p(str.__class__)
+# # TestClass = type('TestClass', (object, str), {'a': 1}) # TypeError: Cannot create a consistent method resolution order (MRO) for bases object, str.
+# TestClass = type('TestClass', (str, object), {'a': 1})
+# p(TestClass)
+# X = type('X', (object,), dict(a=1))
+# p(X)
 
-# zip()
+# Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute.
+# Without an arg, vars() acts like locals()
+# p(vars())
+# p(vars(tuple))
 
+# Make an iterator that aggregates elemens frm each of the iterables
+# Stops when the end of the shortest iterable is reached.
+# Use itertools.zip_longest to bypass this behavior.
+# p(list(zip([1,4,7,10], [2,5,8,11], [3,6,9,12])))
+# p(list(zip([1,4,7,10], [2,5,8], [3,6])))
+
+# Invoked by the import statement.
 # __import__()
