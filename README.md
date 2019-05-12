@@ -1,3 +1,5 @@
 # Python Standard Library Mastery
 
-This repo is an effort to explore standard libraries in depth, with the
+In depth exploration of the Python 3 standard library, one built-in function, type, exception, and module at a time.
+
+## 1. Built-in Functions
