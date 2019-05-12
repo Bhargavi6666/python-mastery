@@ -122,3 +122,127 @@ p = print
 # p(e.__next__())
 # p(list(e))
 # p(e.__next__()) # StopIteration. Enumerate object is exhausted by call to list(e).
+
+# The expression argument is parsed and evaluated as a Python expression
+# p(eval('x+1', {}, {'x': 1}))
+
+# This function supports dynamic execution of Python code. object must be either a string or code object.
+# exec()
+
+# Construct an iterator from those elements of iterable for which function returns True.
+# def filt(x):
+#     if x > 5:
+#         return True
+# p(list(filter(filt, [1, 2, 3, 4, 5, 6, 7, 8, 9])))
+
+# Return a floating point numbers constructed from a number or string
+# p(float(1.213))
+# p(float())
+
+# Convert a value to a formatted representation as controlled by the second argument
+# format_spec values are: s(str), b(bin), c(char), d(dec), o(octal), x(hex), n(number)
+# print("The float number is:{:f}".format(123.4567898))
+# print("bin: {0:b}, oct: {0:o}, hex: {0:x}".format(12))
+# # integer numbers with right alignment
+# print("{:5d}".format(12))
+# # float numbers with center alignment
+# print("{:^10.3f}".format(12.2346))
+# # integer left alignment filled with zeros
+# print("{:<05d}".format(12))
+# # float numbers with center alignment
+# print("{:=8.3f}".format(-12.2346))
+
+# Returns a new frozenset object, an immutable and hashable iterable type.
+# frozenset([1,2,3])
+
+# Return the value of the named attribute of object. Name must be a string.
+# p(getattr(callable, 'test')) # AttributeError
+# p(dir(callable))
+# p(getattr(callable, '__class__'))
+
+# Return a dictionary representing the current global symbol table.
+# This is always the dictionary of the current module.
+# p(globals())
+
+# The args are an object and a sting. True if object has named attribute.
+# p(hasattr(callable, 'test'))
+
+# hash()
+
+# hex()
+
+# id()
+
+# input()
+
+# int()
+
+# isinstance()
+
+# issubclass()
+
+# iter()
+
+# len()
+
+# list()
+
+# locals()
+
+# map()
+
+# max()
+
+# memoryview()
+
+# min()
+
+# next()
+
+# object()
+
+# oct()
+
+# open()
+
+# ord()
+
+# pow()
+
+# print()
+
+# property()
+
+# range()
+
+# reper()
+
+# reversed()
+
+# round()
+
+# set()
+
+# setattr()
+
+# slice()
+
+# sorted()
+
+# @staticmethod
+
+# str()
+
+# sum()
+
+# super()
+
+# tuple()
+
+# type()
+
+# vars()
+
+# zip()
+
+# __import__()
