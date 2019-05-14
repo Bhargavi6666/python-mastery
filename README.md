@@ -36,6 +36,10 @@ module | class | code | type
 
 Base classes | Concrete exceptions | Warnings | Exception hierarchy
 
+raise | assert | try | catch | else | finally
+
+AssertionError | AttributeError | EOFError | FloatingPointError | GeneratorExit | ImportError | ModuleNotFoundError | IndexError | KeyError | NameError | NotImplementedError | OverflowError | RecursionError | ReferenceError | RuntimeError | StopIteration | StopAsyncIteration | SyntaxError | IndentationError | TabError | SystemError | SystemExit | TypeError | UnboundLocalError | UnicodeError | UnicodeEncodeError | UnicodeDecodeError | UnicodeTranslateError | ValueError | ZeroDivisionError | EnvironmentError | IOError | BlockingIOError | ChildProcessError | ConnectionError | BrokenPipeError | ConnectionAbortedError | ConnectionError | ConnectionRefusedError | ConnectionResetError | FileExistsError | IsADirectoryError | NotADirectoryError | PermissionError | ProcessLookupError | TimeoutError | Warning | UserWarning | DeprecationWarning | PendingDeprecationWarning | SyntaxWarning | RuntimeWarning | FutureWarning | ImportWarning | UnicodeWarning | BytesWarning | ResourceWarning
+
 ## 5. Text Processing Services
 
 string | re | difflib | textwrap | unicodedata | stringprep | readline | rlcompleter
