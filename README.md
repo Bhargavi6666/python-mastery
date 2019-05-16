@@ -44,9 +44,6 @@ AssertionError | AttributeError | EOFError | FloatingPointError | GeneratorExit 
 
 string | re | difflib | textwrap | unicodedata | stringprep | readline | rlcompleter
 
-### String Module
-
-
 ## 6. Binary Data Services
 
 struct | codecs

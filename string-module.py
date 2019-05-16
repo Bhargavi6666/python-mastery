@@ -2,14 +2,14 @@ import string
 p = print
 
 # STRING CONSTANTS #############################################################
-# p(string.ascii_letters)
-# p(string.ascii_lowercase)
-# p(string.ascii_uppercase)
-# p(string.digits)
-# p(string.hexdigits)
-# p(string.octdigits)
-# p(string.punctuation)
-# p(string.printable)
+p(string.ascii_letters)
+p(string.ascii_lowercase)
+p(string.ascii_uppercase)
+p(string.digits)
+p(string.hexdigits)
+p(string.octdigits)
+p(string.punctuation)
+p(string.printable)
 
 # CUSTOM STRING FORMATTER ######################################################
 f = string.Formatter()
