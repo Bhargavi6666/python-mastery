@@ -56,6 +56,10 @@ datetime | calendar | collections | collections.abc | heapq | bisect | array | w
 
 numbers | math | cmath | decimal | fractions | random | statistics
 
+### Math
+
+copysign | fabs | factorial | frexp | ldexp | fsum | fmod | modf | remainder | gcd | isfinite | inf | isinf | isnan | isclose | pi | e | tau | nan | trunc | ceil | floor | log | log1p | log2 | log10 | pow | sqrt | cos | acos | sin | asin | tan | atan | atan2 | hypot | degrees | radians | acosh | asinh | atanh | cosh | sinh | tanh
+
 ## 9. Functional Programming Modules
 
 itertols | functols | operator
