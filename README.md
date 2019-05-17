@@ -68,6 +68,11 @@ itertols | functols | operator
 
 pathlib | os.path | fileinput | stat | filecmp | tempfile | glob | fnmatch | linecache | shutil
 
+### os.path Module
+
+abspath | basename | commonpath | commonprefix | dirname | exists | lexists | expanduser | expandvars | getatime | getctime | getsize | isabs | isfile | islink | ismount | samefile | supports_unicode_filenames | normcase | join | normpath | realpath | relpath | split | splitdrive | splitext
+
+
 ## 11. Data Persistence
 
 pickli | copyreg | shelve | marshal | dbm | sqlite3
