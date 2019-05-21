@@ -56,7 +56,7 @@ datetime | calendar | collections | collections.abc | heapq | bisect | array | w
 
 numbers | math | cmath | decimal | fractions | random | statistics
 
-### Math
+### `math` Module
 
 copysign | fabs | factorial | frexp | ldexp | fsum | fmod | modf | remainder | gcd | isfinite | inf | isinf | isnan | isclose | pi | e | tau | nan | trunc | ceil | floor | log | log1p | log2 | log10 | pow | sqrt | cos | acos | sin | asin | tan | atan | atan2 | hypot | degrees | radians | acosh | asinh | atanh | cosh | sinh | tanh
 
@@ -68,7 +68,7 @@ itertols | functols | operator
 
 pathlib | os.path | fileinput | stat | filecmp | tempfile | glob | fnmatch | linecache | shutil
 
-### os.path Module
+### `os.path` Module
 
 abspath | basename | commonpath | commonprefix | dirname | exists | lexists | expanduser | expandvars | getatime | getctime | getsize | isabs | isfile | islink | ismount | samefile | supports_unicode_filenames | normcase | join | normpath | realpath | relpath | split | splitdrive | splitext
 
