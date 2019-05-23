@@ -85,6 +85,10 @@ zlib | gzip | bz2 | lzma | tarfile
 
 csv | configparser | netrc | xdrlib | plistlib
 
+### `csv` Module
+
+Dialect | DictReader | DictWriter | Error | OrderedDict | QUOTE_ALL | QUOTE_MINIMAL | QUOTE_NONE | QUOTE_NONNUMERIC | Sniffer | StringIO | excel | excel_tab | field_size_limit | get_dialect | list_dialects | re | reader | register_dialect | unix_dialect | unregister_dialect | writer
+
 ## 14. Cryptographic Services
 
 hashlib | hmac | secrets
