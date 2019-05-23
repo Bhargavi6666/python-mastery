@@ -72,7 +72,6 @@ pathlib | os.path | fileinput | stat | filecmp | tempfile | glob | fnmatch | lin
 
 abspath | basename | commonpath | commonprefix | dirname | exists | lexists | expanduser | expandvars | getatime | getctime | getsize | isabs | isfile | islink | ismount | samefile | supports_unicode_filenames | normcase | join | normpath | realpath | relpath | split | splitdrive | splitext
 
-
 ## 11. Data Persistence
 
 pickli | copyreg | shelve | marshal | dbm | sqlite3
@@ -96,6 +95,10 @@ hashlib | hmac | secrets
 ## 15. Generic Operating System Services
 
 os | io | time | argparse | getopt | logging | logging.config | logging.handlers | getpass | curses | curses.textpad | curses.ascii | curses.panel | platform | errno | ctypes
+
+### `os` Module
+
+abc | abort | access | altsep | chdir | chflags | chmod | chown | chroot | close | closerange | confstr | confstr_names | cpu_count | ctermid | curdir | defpath | device_encoding | devnull | dup | dup2 | environ | environb | error | execl | execle | execlp | execlpe | execv | execve | execvp | execvpe | extsep | fchdir | fchmod | fchown | fdopen | fork | forkpty | fpathconf | fsdecode | fsencode | fspath | fstat | fstatvfs | fsync | ftruncate | fwalk | get_blocking | get_exec_path | get_inheritable | get_terminal_size | getcwd | getcwdb | getegid | getenv | getenvb | geteuid | getgid | getgrouplist | getgroups | getloadavg | getlogin | getpgid | getpgrp | getpid | getppid | getpriority | getsid | getuid | initgroups | isatty | kill | killpg | lchflags | lchmod | lchown | linesep | link | listdir | lockf | lseek | lstat | major | makedev | makedirs | minor | mkdir | mkfifo | mknod | name | nice | open | openpty | pardir | path | pathconf | pathconf_names | pathsep | pipe | popen | pread | putenv | pwrite | read | readlink | readv | register_at_fork | remove | removedirs | rename | renames | replace | rmdir | scandir | sched_get_priority_max | sched_get_priority_min | sched_yield | sendfile | sep | set_blocking | set_inheritable | setegid | seteuid | setgid | setgroups | setpgid | setpgrp | setpriority | setregid | setreuid | setsid | setuid | spawnl | spawnle | spawnlp | spawnlpe | spawnv | spawnve | spawnvp | spawnvpe | st | stat | stat_result | statvfs | statvfs_result | strerror | supports_bytes_environ | supports_dir_fd | supports_effective_ids | supports_fd | supports_follow_symlinks | symlink | sync | sys | sysconf | sysconf_names | system | tcgetpgrp | tcsetpgrp | terminal_size | times | times_result | truncate | ttyname | umask | uname | uname_result | unlink | unsetenv | urandom | utime | wait | wait3 | wait4 | waitpid | walk | write | writev
 
 ## 16. Concurrent Execution
 
